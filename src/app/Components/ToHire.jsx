@@ -8,24 +8,43 @@ export default function ToHire() {
         When Was the Last Time You Got More Than 3 Applicants for a Restaurant
         Vacancy?
       </p>
-      {/* <div className="p-16 flex max-w-7xl w-full mx-auto gap-4 flex-wrap items-center justify-center">
-        <div className="bg-white rounded-xl p-6 flex flex-col justify-center items-center w-xs">
-          <h1 className="text-xl font-medium">Post Jobs in Minutes</h1>
-          <p className="text-xs w-xs mt-4">Easily hire staff for free by posting a job in just 2 minutes, connect directly with candidates, and receive applicant resumes via SMS for a seamless hiring experience.</p>
-          <img className="w-72  mt-8" src="./images/Job-portrait 1.png" alt="" />
-        </div>v
-        <div className="bg-white rounded-xl p-6 flex flex-col justify-center items-center w-sm">
-          <h1 className="text-xl font-medium text-center">Connect with Aadhar Verified Candidates</h1>
-          <p className="text-xs w-xs mt-4">Access a growing pool of skilled job seekers across all key roles—chefs, waiters, stewards, baristas, managers, and more.</p>
-          <img className="w-72  mt-8" src="./images/Job-portrait 1.png" alt="" />
+       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+          
+          {/* Card 1 - Post Jobs in Minutes */}
+          <div className="bg-white rounded-2xl p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+              Post Jobs in Minutes
+            </h2>
+            <p className="text-gray-600 text-center leading-relaxed">
+              Easily hire staff for free by posting a job in just 2 minutes, 
+              connect directly with candidates, and receive applicant 
+              resumes via SMS for a seamless hiring experience.
+            </p>
+          </div>
+
+          {/* Card 2 - Connect with Aadhar Verified Candidates */}
+          <div className="bg-white rounded-2xl p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+              Connect with Aadhar Verified Candidates
+            </h2>
+            <p className="text-gray-600 text-center leading-relaxed">
+              Access a growing pool of skilled job seekers across all key roles
+              —chefs, waiters, stewards, baristas, managers, and more.
+            </p>
+          </div>
+
+          {/* Card 3 - Call Applicants Directly */}
+          <div className="bg-white rounded-2xl p-8 md:col-span-2 lg:col-span-1">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4 text-center">
+              Call Applicants Directly
+            </h2>
+            <p className="text-gray-600 text-center leading-relaxed">
+              No middlemen. Call, schedule interviews, and make hiring 
+              decisions instantly within the app.
+            </p>
+          </div>
+
         </div>
-        <div className="bg-white rounded-xl p-6 flex flex-col justify-center items-center w-sm">
-          <h1 className="text-xl font-medium"> Call Applicants Directly </h1>
-          <p className="text-xs w-xs mt-4">No middlemen. Call, schedule interviews, and make hiring decisions instantly within the app.</p>
-          <img className="w-72  mt-8" src="./images/Job-portrait 1.png" alt="" />
-        </div>
-        
-      </div> */}
     </section>
   );
 }

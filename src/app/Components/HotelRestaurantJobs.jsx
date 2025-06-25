@@ -107,8 +107,11 @@ const HotelRestaurantJobs = () => {
               <p className="text-sm font-medium mb-4">{job.jobsAvailable}</p>
 
               {/* Button */}
-              <button className="w-full bg-[#753E34] hover:bg-amber-800 text-white py-2 px-4 rounded-full text-xs md:text-sm transition-colors duration-200">
+              <button className="hidden md:block w-full bg-[#753E34] hover:bg-amber-800 text-white py-2 px-4 rounded-full text-xs md:text-sm transition-colors duration-200">
                 {job.buttonText}
+              </button>
+              <button className="block md:hidden w-full bg-[#753E34] hover:bg-amber-800 text-white py-2 px-4 rounded-full text-xs md:text-sm transition-colors duration-200">
+                Explore
               </button>
             </div>
           </div>

@@ -64,22 +64,22 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 bg-gray-50">
+    <div className="max-w-7xl mx-auto px-4 py-12">
       {/* Header */}
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 leading-tight">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-2 leading-tight">
           Our Users Speak:
         </h1>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-gray-700">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal">
           Hospitality Recruitment That Works
         </h2>
       </div>
 
       {/* Job Seekers Section */}
-      <div className="mb-16">
+      <div className="mb-12">
         <div className="flex items-center justify-center mb-8">
-          <div className="bg-red-400 text-white px-6 py-3 rounded-lg flex items-center space-x-3">
-            <span className="text-2xl">"</span>
+          <div className="px-6 py-3 rounded-lg flex items-center space-x-3">
+            <span className="text-3xl bg-[#DF6756] rounded-xl p-3 text-white"><img className='w-6 h-6' src="./images/quote.svg" alt="" /></span>
             <span className="font-medium text-lg">Voices of Our Jobseekers</span>
           </div>
         </div>
@@ -104,22 +104,22 @@ const Testimonial = () => {
       {/* Partners Section */}
       <div>
         <div className="flex items-center justify-center mb-8">
-          <div className="bg-red-400 text-white px-6 py-3 rounded-lg flex items-center space-x-3">
-            <span className="text-2xl">"</span>
+          <div className="px-6 py-3 rounded-lg flex items-center space-x-3">
+            <span className="text-3xl bg-[#DF6756] rounded-xl p-3 text-white"><img className='w-6 h-6' src="./images/quote.svg" alt="" /></span>
             <span className="font-medium text-lg">Hear from Our Recruitment Partners</span>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {partnerTestimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-900 text-white rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div key={index} className="rounded-xl p-6 bg-white shadow-md hover:shadow-2xl transition-shadow duration-300">
               <div className="flex items-center mb-4">
-                <div className="bg-white text-gray-900 rounded-lg p-3 mr-4 flex items-center justify-center">
-                  <span className="text-2xl font-bold">"</span>
+                <div className="bg-gray-900 rounded-lg p-3 mr-4 flex items-center justify-center">
+                  <span className="text-2xl font-bold text-white"><img className='w-6 h-6' src="./images/quote.svg" alt="" /></span>
                 </div>
                 <h3 className="font-semibold text-lg">{testimonial.name}</h3>
               </div>
-              <p className="text-gray-200 leading-relaxed text-base">{testimonial.text}</p>
+              <p className="leading-relaxed text-base">{testimonial.text}</p>
             </div>
           ))}
         </div>

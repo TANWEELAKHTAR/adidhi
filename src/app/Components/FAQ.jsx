@@ -62,10 +62,10 @@ const FAQ = () => {
   const currentFAQ = activeTab === 'jobseekers' ? jobseekersFAQ : employersFAQ;
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12 bg-white">
+    <div className="max-w-7xl mx-auto px-4 py-12 mt-20">
       {/* Toggle Switch */}
       <div className="flex justify-center mb-8">
-        <div className="bg-gray-100 rounded-full p-1 flex items-center">
+        <div className="bg-white rounded-full p-1 flex items-center">
           <button
             onClick={() => setActiveTab('jobseekers')}
             className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
@@ -91,7 +91,7 @@ const FAQ = () => {
 
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold  text-gray-900 leading-tight">
           Got Questions? We've Got Answers.
         </h1>
       </div>
@@ -134,16 +134,6 @@ const FAQ = () => {
             </div>
           </div>
         ))}
-      </div>
-
-      {/* Contact Support */}
-      <div className="mt-12 text-center">
-        <p className="text-gray-600 mb-4">
-          Still have questions? We're here to help!
-        </p>
-        <button className="bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
-          Contact Support
-        </button>
       </div>
     </div>
   );
