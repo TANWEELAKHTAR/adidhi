@@ -3,8 +3,8 @@ import InfiniteJobsCarousel from "./InfiniteJobsCarousel";
 export default function Hero() {
   return (
     <>
-      <div className="container flex items-center justify-center pt-48 pb-20 flex-col p-6">
-        <h1 className="text-2xl md:text-5xl lg:text-7xl text-center font-normal">
+      <div className="w-full flex items-center justify-center pt-48 pb-20 flex-col p-6">
+        <h1 className="text-3xl md:text-5xl lg:text-7xl text-center font-normal">
           India's #1 App <br />
           for Hotel & Restaurant Jobs
         </h1>
@@ -22,7 +22,6 @@ export default function Hero() {
         </div>
       </div>
       <InfiniteJobsCarousel/>
-
     </>
   );
 }
