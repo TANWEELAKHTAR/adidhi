@@ -4,13 +4,15 @@ import { Plus, Minus } from 'lucide-react';
 
 const FAQ = () => {
   const [activeTab, setActiveTab] = useState('jobseekers');
-  const [openItems, setOpenItems] = useState({});
+  const [openItem, setOpenItem] = useState(null);
 
   const toggleItem = (index) => {
-    setOpenItems(prev => ({
-      ...prev,
-      [index]: !prev[index]
-    }));
+    setOpenItem(openItem === index ? null : index);
+  };
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+    setOpenItem(null); // Close any open items when switching tabs
   };
 
   const jobseekersFAQ = [
@@ -64,34 +66,36 @@ const FAQ = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 mt-20">
       {/* Toggle Switch */}
-      <div className="flex justify-center mb-8">
-        <div className="bg-white rounded-full p-1 flex items-center">
-          <button
-            onClick={() => setActiveTab('jobseekers')}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-              activeTab === 'jobseekers'
-                ? 'bg-red-500 text-white shadow-md'
-                : 'text-gray-600 hover:text-gray-800'
+      <div className="flex justify-center items-center mb-8 gap-4">
+        <span className={`text-sm font-medium transition-colors duration-300 ${
+          activeTab === 'jobseekers' ? 'text-[#7D4237]' : 'text-black'
+        }`}>
+          For jobseekers
+        </span>
+        
+        <button
+          onClick={() => handleTabChange(activeTab === 'jobseekers' ? 'employers' : 'jobseekers')}
+          className={`relative inline-flex items-center h-6 w-11 rounded-full transition-colors duration-300 ${
+            activeTab === 'employers' ? 'bg-[#7D4237]' : 'bg-[#7D4237]'
+          }`}
+        >
+          <span
+            className={`inline-block h-4 w-4 rounded-full bg-white shadow-md transform transition-transform duration-300 ${
+              activeTab === 'employers' ? 'translate-x-6' : 'translate-x-1'
             }`}
-          >
-            For jobseekers
-          </button>
-          <button
-            onClick={() => setActiveTab('employers')}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-              activeTab === 'employers'
-                ? 'bg-red-500 text-white shadow-md'
-                : 'text-gray-600 hover:text-gray-800'
-            }`}
-          >
-            For Employers
-          </button>
-        </div>
+          />
+        </button>
+        
+        <span className={`text-sm font-medium transition-colors duration-300 ${
+          activeTab === 'employers' ? 'text-[#7D4237]' : 'text-black'
+        }`}>
+          For Employers
+        </span>
       </div>
 
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold  text-gray-900 leading-tight">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-normal text-gray-900 leading-tight">
           Got Questions? We've Got Answers.
         </h1>
       </div>
@@ -101,32 +105,32 @@ const FAQ = () => {
         {currentFAQ.map((item, index) => (
           <div
             key={`${activeTab}-${index}`}
-            className="border border-gray-200 rounded-lg overflow-hidden"
+            className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200"
           >
             <button
-              onClick={() => toggleItem(`${activeTab}-${index}`)}
+              onClick={() => toggleItem(index)}
               className="w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between"
             >
               <span className="text-lg font-medium text-gray-900 pr-4">
                 {item.question}
               </span>
               <div className="flex-shrink-0">
-                {openItems[`${activeTab}-${index}`] ? (
-                  <Minus className="w-6 h-6 text-gray-600" />
+                {openItem === index ? (
+                  <Minus className="w-6 h-6" />
                 ) : (
-                  <Plus className="w-6 h-6 text-gray-600" />
+                  <Plus className="w-6 h-6" />
                 )}
               </div>
             </button>
             
             <div
               className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                openItems[`${activeTab}-${index}`]
+                openItem === index
                   ? 'max-h-96 opacity-100'
                   : 'max-h-0 opacity-0'
               }`}
             >
-              <div className="px-6 pb-4 pt-2 bg-gray-50">
+              <div className="px-6 pb-4 pt-2 bg-gray-50 border-t border-gray-100">
                 <p className="text-gray-700 leading-relaxed">
                   {item.answer}
                 </p>

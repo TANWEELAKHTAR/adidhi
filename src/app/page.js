@@ -9,6 +9,7 @@ import ToHire from "./Components/ToHire"
 const App = () => {
   return (
     <main className="relative w-full bg-[#F5F5F5]">
+    <img className="fixed right-20 top-40 z-[999] w-44 h-20 object-cover rounded-lg" src="./images/qr.png" alt="" />
     <NavBar/>
     <Hero/>
     <JobSeeker/>

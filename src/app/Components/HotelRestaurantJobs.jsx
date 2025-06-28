@@ -74,7 +74,7 @@ const HotelRestaurantJobs = () => {
     <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-3xl sm:text-4xl lg:text-6xl font-normal text-gray-900 mb-4">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-normal text-gray-900 mb-4">
           Get hired by leading hotels and restaurants
         </h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">

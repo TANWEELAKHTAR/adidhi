@@ -67,10 +67,10 @@ const Testimonial = () => {
     <div className="max-w-7xl mx-auto px-4 py-12">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-2 leading-tight">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-normal mb-2 leading-tight">
           Our Users Speak:
         </h1>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-normal">
           Hospitality Recruitment That Works
         </h2>
       </div>
