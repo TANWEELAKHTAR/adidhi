@@ -95,26 +95,26 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/adidhi.app?igsh=c3hnZmZ1ODZpN2t5"
                   className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-light"
                 >
-                  Insta
+                  Instagram
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/adidhi-app/"
                   className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-light"
                 >
-                  Linkden
+                  Linkedin
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/1Ksh4cHJEk/?mibextid=wwXIfr"
                   className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-light"
                 >
-                  X
+                  Facebook
                 </a>
               </li>
             </ul>
