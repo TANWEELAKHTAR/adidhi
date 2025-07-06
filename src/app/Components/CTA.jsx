@@ -5,7 +5,7 @@ export default function CTA() {
           Ready to hire <br />
           <span className="text-[#DF6756]">smarter and faster?</span>
         </h1>
-        <div className="flex my-10 items-center gap-4 flex-wrap mb-10">
+        <div className="flex my-10 items-center justify-center gap-4 flex-wrap mb-10">
           <img
             className="object-cover w-40 h-40 "
             src="./images/adidhi-logo-vertical.png"
