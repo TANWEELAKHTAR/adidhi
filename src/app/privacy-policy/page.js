@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
+import NavBar from '../Components/NavBar';
 
 const PrivacyPolicy = () => {
   return (
@@ -103,7 +103,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Children's Privacy</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Children&apos;s Privacy</h2>
                 <p className="text-gray-700 mb-4 leading-relaxed">
                   Our Service does not address anyone under the age of 13. If We become aware that We have collected 
                   Personal Data from anyone under 13 without parental consent, We will take steps to remove that information.
