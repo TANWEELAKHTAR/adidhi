@@ -18,46 +18,38 @@ const FAQ = () => {
   const jobseekersFAQ = [
     {
       question: "What kind of jobs are available on Adidhi?",
-      answer: "Adidhi offers a wide range of hospitality jobs including front desk positions, housekeeping, food & beverage service, kitchen staff, concierge, event management, hotel management, and many more roles across hotels, restaurants, resorts, and other hospitality businesses."
+      answer: "From Steward to Head Chef and all the jobs in between, you will find jobs fit for all levels of skills and experience on Adidhi"
+    },
+    {
+      question: "What kind of hospitality businesses are hiring on Adidhi?",
+      answer: " You can apply to jobs from a wide range of hospitality businesses like Hotels, Restaurants, Cafes, Resorts, Cloud Kitchens, and Catering businesses on Adidhi"
     },
     {
       question: "I have created my profile on the App. What's next?",
-      answer: "After creating your profile, complete all sections including your experience, skills, and preferences. Upload a professional photo and resume. Then start browsing and applying to jobs that match your profile. You'll receive notifications when employers show interest in your profile."
+      answer: "That's awesome. Now, enter your preferences and relax as employers call you directly to discuss various opportunities"
     },
     {
       question: "I did not get OTP, what should I do?",
-      answer: "If you didn't receive the OTP, first check your spam/junk folder. Ensure you've entered the correct phone number. Try requesting the OTP again after 2-3 minutes. If the issue persists, contact our support team through the app or try using the alternative verification method."
+      answer: " If you do not get OTP, wait for some time and try again via the “Resend OTP” option. You will receive an SMS with your OTP. Enter that code to login or sign up."
     },
     {
       question: "Do I have to pay to apply to jobs?",
-      answer: "No, applying to jobs on Adidhi is completely free for job seekers. You can create your profile, browse jobs, and apply to as many positions as you want without any charges. Our platform is designed to help you find employment opportunities at no cost."
-    },
-    {
-      question: "How do I get notified about new job opportunities?",
-      answer: "Enable push notifications in the app settings to receive instant alerts about new jobs matching your profile. You can also set up email notifications and customize your preferences to receive updates about specific types of roles or locations."
+      answer: "Absolutely not. This platform is 100% Free for all job applicants."
     }
   ];
 
   const employersFAQ = [
     {
-      question: "What kind of hospitality businesses are hiring on Adidhi?",
-      answer: "Hotels, restaurants, resorts, cafes, catering services, event management companies, cruise lines, airlines, and various other hospitality and tourism businesses use Adidhi to find qualified staff for their operations."
+      question: "How to Post a Job on Adidhi?",
+      answer: " In order to post a job, you need to register and fill out basic information about your business first. After that, you will be able to click on the “Post a Job” option wherein you need to enter details about the job like Job Title, Experience, Location, Job type, and so on."
     },
     {
-      question: "How do I post a job on Adidhi?",
-      answer: "Create your employer account, complete your business profile, and click 'Post a Job'. Fill in the job details including position, requirements, salary, and benefits. Once posted, qualified candidates will start applying, and you'll receive notifications about new applications."
+      question: "What kind of candidates can I find on Adidhi?",
+      answer: " Right from skilled professionals and recent graduates to students willing to work part-time, you will find all kinds of candidates on Adidhi. You can choose applicants based on your requirement."
     },
     {
-      question: "What is the cost of hiring through Adidhi?",
-      answer: "Adidhi offers flexible pricing plans for employers. You can choose from monthly subscriptions, per-job posting fees, or premium plans with additional features like priority listing and advanced candidate matching. Contact our sales team for customized enterprise packages."
-    },
-    {
-      question: "How do I find the right candidates for my business?",
-      answer: "Use our advanced filtering options to search candidates by experience, skills, location, and availability. Our AI-powered matching system also recommends suitable candidates based on your job requirements. You can review profiles, portfolios, and ratings before making contact."
-    },
-    {
-      question: "Can I manage multiple job postings from one account?",
-      answer: "Yes, you can manage multiple job postings from a single employer account. Our dashboard allows you to track applications, manage candidate communications, schedule interviews, and monitor the hiring progress for all your open positions in one place."
+      question: "How can I talk to candidates directly?",
+      answer: "Once you have signed up and posted a job, you can see jobseekers profiles who have applied for the job. You can directly connect with them and discuss the job details."
     }
   ];
 

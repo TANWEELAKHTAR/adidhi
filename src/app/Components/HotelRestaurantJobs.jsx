@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 
@@ -71,13 +71,12 @@ const HotelRestaurantJobs = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
-      {/* Header */}
+    <div className="max-w-7xl mx-auto px-4 py-8">
       <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-normal text-gray-900 mb-4">
-          Get hired by leading hotels and restaurants
+        <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl my-6">
+          <span className="text-[#DF6756]">Get hired by </span><br />leading hotels and restaurants.
         </h1>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl max-w-4xl mx-auto">
           explore a wide range of job openings from leading hotel and restaurant
           chains.
           <br className="hidden sm:block" />
@@ -86,11 +85,9 @@ const HotelRestaurantJobs = () => {
         </p>
       </div>
 
-      {/* Job Categories Grid - 2 columns on mobile, 4 on larger screens */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 mb-12">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 mb-12 bg-[#F2F2F2] p-8 rounded-2xl">
         {jobCategories.map((job) => (
-          <div key={job.id} className="bg-white rounded-lg overflow-hidden">
-            {/* Image */}
+          <div key={job.id} className=" rounded-lg overflow-hidden">
             <div className="w-full">
               <img
                 src={job.image}
@@ -101,16 +98,18 @@ const HotelRestaurantJobs = () => {
 
             {/* Content */}
             <div className="p-4">
-              <h3 className="font-semibold text-lg sm:text-xl text-gray-900">
+              <h3 className="font-semibold text-lg md:text-xl text-gray-900 text-center">
                 {job.title}
               </h3>
-              <p className="text-sm font-medium mb-4">{job.jobsAvailable}</p>
+              <p className="text-xs font-medium mb-4 text-center">
+                {job.jobsAvailable}
+              </p>
 
               {/* Button */}
-              <button className="hidden md:block w-full bg-[#753E34] hover:bg-amber-800 text-white py-2 px-4 rounded-full text-xs md:text-sm transition-colors duration-200">
+              <button className="hidden md:block w-full bg-[#753E34] hover:bg-amber-800 text-white py-3 px-4 rounded-full text-xs transition-colors duration-200">
                 {job.buttonText}
               </button>
-              <button className="block md:hidden w-full bg-[#753E34] hover:bg-amber-800 text-white py-2 px-4 rounded-full text-xs md:text-sm transition-colors duration-200">
+              <button className="block md:hidden w-full bg-[#753E34] hover:bg-amber-800 text-white py-2 px-4 rounded-full text-xs transition-colors duration-200">
                 Explore
               </button>
             </div>
@@ -121,7 +120,7 @@ const HotelRestaurantJobs = () => {
       {/* Bottom CTA Button */}
       <div className="text-center">
         <button className="bg-[#D06E5C] hover:bg-red-500 text-white font-semibold py-4 px-8 rounded-full text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
-          Explore latest vacancies
+          Explore latest vacancies &rarr;
         </button>
       </div>
     </div>

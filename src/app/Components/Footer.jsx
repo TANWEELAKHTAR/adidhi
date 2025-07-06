@@ -1,34 +1,9 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <div className="w-full mt-20">
-      <div className="flex items-center justify-center flex-col p-6">
-        <img
-          className="object-cover w-40 h-40 "
-          src="./images/adidhi-logo-vertical.png"
-          alt=""
-        />
-        <h1 className="mt-8 text-3xl md:text-4xl lg:text-5xl text-center font-medium">
-          Ready to hire smarter and faster?
-        </h1>
-        <p className="mt-4 text-sm text-center">
-          Scan this QR code with your phone to download Adidhi app.
-        </p>
-        <img
-          className="object-cover w-40 h-40 mt-4"
-          src="./images/qr.png"
-          alt=""
-        />
-      </div>
-      <div className="hidden lg:flex w-full h-screen relative items-center justify-center overflow-hidden">
-        <img
-          className=" w-full absolute top-10 object-cover object-center p-6"
-          src=".\images\adidhi-phone.png"
-          alt=""
-        />
-      </div>
       <footer className="bg-black text-white py-16 px-6 lg:px-12">
-        
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 lg:gap-16">
           {/* Logo and Address */}
           <div className="col-span-2">
             <img src=".\images\adidhi-logo-vertical-white.png" alt="" />
@@ -77,6 +52,14 @@ export default function Footer() {
                 >
                   how we work
                 </a>
+              </li>
+              <li>
+                <Link
+                  href={"/privacy-policy"}
+                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-light"
+                >
+                  Privacy Policy
+                </Link>
               </li>
             </ul>
           </div>
@@ -138,6 +121,5 @@ export default function Footer() {
           </div>
         </div> */}
       </footer>
-    </div>
   );
 }

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -42,8 +42,7 @@ const InfiniteJobsCarousel = () => {
       role: "Chef Jobs",
       openings: "1200 Openings",
       bgColor: "#FE5B00",
-      image:
-        "./images/Chef.png",
+      image: "./images/Chef.png",
       jobs: [
         {
           title: "Kerala Meals Master",
@@ -72,8 +71,7 @@ const InfiniteJobsCarousel = () => {
       role: "F & B Manager",
       openings: "1000 Openings",
       bgColor: "#D6C1FA",
-      image:
-        "./images/Manager.png",
+      image: "./images/Manager.png",
       jobs: [
         {
           title: "Restaurant Waiter",
@@ -102,8 +100,7 @@ const InfiniteJobsCarousel = () => {
       role: "Bartender",
       openings: "800 Openings",
       bgColor: "#CDFEBF",
-      image:
-        "./images/Barista.png",
+      image: "./images/Barista.png",
       jobs: [
         {
           title: "Restaurant Waiter",
@@ -147,26 +144,6 @@ const InfiniteJobsCarousel = () => {
       duration: 20,
       ease: "none",
     });
-
-    // Pause on hover
-    const handleMouseEnter = () => {
-      timelineRef.current.pause();
-    };
-
-    const handleMouseLeave = () => {
-      timelineRef.current.resume();
-    };
-
-    carousel.addEventListener("mouseenter", handleMouseEnter);
-    carousel.addEventListener("mouseleave", handleMouseLeave);
-
-    return () => {
-      if (timelineRef.current) {
-        timelineRef.current.kill();
-      }
-      carousel.removeEventListener("mouseenter", handleMouseEnter);
-      carousel.removeEventListener("mouseleave", handleMouseLeave);
-    };
   }, []);
 
   return (
