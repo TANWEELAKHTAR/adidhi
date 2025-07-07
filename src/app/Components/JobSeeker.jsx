@@ -55,8 +55,8 @@ export default function JobSeeker() {
             </div>
           </div>
         </div>
-        <div className="">
-          {/* <img src="" alt="" /> */}
+        <div className="hidden lg:block w-1/3">
+          <img className="w-96 object-cover" src="/images/phone.png" alt="" />
         </div>
       </div>
     </section>

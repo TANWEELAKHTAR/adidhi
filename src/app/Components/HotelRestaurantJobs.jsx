@@ -74,7 +74,9 @@ const HotelRestaurantJobs = () => {
     <div className="max-w-7xl mx-auto px-4 py-8">
       <div className="text-center mb-12">
         <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl my-6">
-          <span className="text-[#DF6756]">Get hired by </span><br />leading hotels and restaurants.
+          <span className="text-[#DF6756]">Get hired by </span>
+          <br />
+          leading hotels and restaurants.
         </h1>
         <p className="text-xl md:text-2xl max-w-4xl mx-auto">
           explore a wide range of job openings from leading hotel and restaurant
@@ -84,8 +86,8 @@ const HotelRestaurantJobs = () => {
           everyone.
         </p>
       </div>
-
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 mb-12 bg-[#F2F2F2] p-8 rounded-2xl">
+      <div className="bg-[#F2F2F2] p-8 rounded-2xl">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 mb-12">
         {jobCategories.map((job) => (
           <div key={job.id} className=" rounded-lg overflow-hidden">
             <div className="w-full">
@@ -116,13 +118,13 @@ const HotelRestaurantJobs = () => {
           </div>
         ))}
       </div>
-
-      {/* Bottom CTA Button */}
       <div className="text-center">
         <button className="bg-[#D06E5C] hover:bg-red-500 text-white font-semibold py-4 px-8 rounded-full text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
           Explore latest vacancies &rarr;
         </button>
       </div>
+      </div>
+      
     </div>
   );
 };
