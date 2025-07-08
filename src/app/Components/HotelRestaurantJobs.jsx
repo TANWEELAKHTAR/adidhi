@@ -119,7 +119,7 @@ const HotelRestaurantJobs = () => {
         ))}
       </div>
       <div className="text-center">
-        <button className="bg-[#D06E5C] hover:bg-red-500 text-white font-semibold py-4 px-8 rounded-full text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+        <button className="bg-[#D06E5C] hover:bg-red-500 text-white font-semibold py-4 px-8 rounded-full text-xs sm:text-sm md:text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
           Explore latest vacancies &rarr;
         </button>
       </div>

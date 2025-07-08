@@ -8,10 +8,10 @@ const InfiniteJobsCarousel = () => {
   const timelineRef = useRef(null);
 
   const images = [
-    "/images/C1.png",
-    "/images/C2.png",
-    "/images/C3.png",
-    "/images/C4.png",
+    "/images/W.svg",
+    "/images/Cheif.svg",
+    "/images/F&B.svg",
+    "/images/C4.svg",
   ];
 
   // Duplicate the data for seamless infinite scroll
@@ -45,12 +45,12 @@ const InfiniteJobsCarousel = () => {
           {duplicatedData.map((imgSrc, index) => (
             <div
               key={`${imgSrc}-${index}`}
-              className="job-card flex-shrink-0 h-64 w-96 rounded-lg bg-red-400"
+              className="job-card flex-shrink-0 h-64 w-80 rounded-lg"
             >
               <img
                 src={imgSrc}
                 alt={`Job ${index + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fit"
               />
             </div>
           ))}
