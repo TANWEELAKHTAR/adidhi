@@ -87,13 +87,13 @@ const FAQ = () => {
 
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-normal text-gray-900 leading-tight">
-          Got Questions? We've Got Answers.
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
+          Got Questions? <span className='text-[#DF6756]'>We've Got Answers.</span>
         </h1>
       </div>
 
       {/* FAQ Items */}
-      <div className="space-y-4">
+      <div className="space-y-4 md:px-40">
         {currentFAQ.map((item, index) => (
           <div
             key={`${activeTab}-${index}`}

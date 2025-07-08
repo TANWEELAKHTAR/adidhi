@@ -1,7 +1,7 @@
 export default function CTA() {
   return (
-    <div className="flex items-center justify-center flex-col p-6">
-        <h1 className="mt-8 text-4xl md:text-5xl lg:text-7xl text-center font-bold">
+    <div className="flex items-center justify-center flex-col p-6 m-10">
+        <h1 className="mt-20 text-4xl md:text-5xl lg:text-7xl text-center font-bold">
           Ready to hire <br />
           <span className="text-[#DF6756]">smarter and faster?</span>
         </h1>

@@ -7,15 +7,17 @@ const InfiniteJobsCarousel = () => {
   const carouselRef = useRef(null);
   const timelineRef = useRef(null);
 
-  const images = [
-    "/images/W.svg",
-    "/images/Cheif.svg",
-    "/images/F&B.svg",
-    "/images/C4.svg",
-  ];
+  const images = ["/images/carousel-image.png"];
 
   // Duplicate the data for seamless infinite scroll
-  const duplicatedData = [...images, ...images];
+  const duplicatedData = [
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+    ...images,
+  ];
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -30,31 +32,26 @@ const InfiniteJobsCarousel = () => {
     timelineRef.current.set(carousel, { x: 0 });
     timelineRef.current.to(carousel, {
       x: -totalWidth,
-      duration: 20,
+      duration: 25,
       ease: "none",
     });
   }, []);
 
   return (
     <div className="w-full py-12 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div
-          ref={carouselRef}
-          className="w-fit flex gap-6 will-change-transform"
-        >
-          {duplicatedData.map((imgSrc, index) => (
-            <div
-              key={`${imgSrc}-${index}`}
-              className="job-card flex-shrink-0 h-64 w-80 rounded-lg"
-            >
-              <img
-                src={imgSrc}
-                alt={`Job ${index + 1}`}
-                className="w-full h-full object-fit"
-              />
-            </div>
-          ))}
-        </div>
+      <div ref={carouselRef} className="w-fit flex will-change-transform gap-3">
+        {duplicatedData.map((imgSrc, index) => (
+          <div
+            key={`${imgSrc}-${index}`}
+            className="job-card flex-shrink-0 rounded-lg"
+          >
+            <img
+              src={imgSrc}
+              alt={`Job ${index + 1}`}
+              className="w-fit h-80 object-fit"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
