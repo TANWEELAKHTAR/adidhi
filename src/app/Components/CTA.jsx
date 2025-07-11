@@ -8,7 +8,7 @@ export default function CTA() {
         <div className="flex my-10 items-center justify-center gap-4 flex-wrap mb-10">
           <img
             className="object-cover w-40 h-40 "
-            src="./images/adidhi-logo-vertical.png"
+            src="./images/adidhi-logo-vertical.svg"
             alt=""
           />
           <img

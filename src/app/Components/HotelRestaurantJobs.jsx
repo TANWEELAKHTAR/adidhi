@@ -9,7 +9,7 @@ const HotelRestaurantJobs = () => {
       title: "Executive Chef",
       jobsAvailable: "1567 jobs available",
       image:
-        "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=300&h=200&fit=crop&crop=faces",
+        "/images/h1.png",
       buttonText: "Explore Executive Chef vacancies",
     },
     {
@@ -17,7 +17,7 @@ const HotelRestaurantJobs = () => {
       title: "Sous Chef",
       jobsAvailable: "1567 jobs available",
       image:
-        "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300&h=200&fit=crop&crop=faces",
+        "/images/h2.png",
       buttonText: "Explore Sous Chef vacancies",
     },
     {
@@ -25,7 +25,7 @@ const HotelRestaurantJobs = () => {
       title: "Waiter",
       jobsAvailable: "1567 jobs available",
       image:
-        "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=300&h=200&fit=crop&crop=faces",
+        "/images/h3.png",
       buttonText: "Explore Waiter vacancies",
     },
     {
@@ -33,7 +33,7 @@ const HotelRestaurantJobs = () => {
       title: "Waitress",
       jobsAvailable: "1567 jobs available",
       image:
-        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=200&fit=crop&crop=faces",
+        "/images/h4.png",
       buttonText: "Explore Waitress vacancies",
     },
     {
@@ -41,7 +41,7 @@ const HotelRestaurantJobs = () => {
       title: "Barista",
       jobsAvailable: "1567 jobs available",
       image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop&crop=faces",
+        "/images/h5.png",
       buttonText: "Explore Barista vacancies",
     },
     {
@@ -49,7 +49,7 @@ const HotelRestaurantJobs = () => {
       title: "Pastry Chef",
       jobsAvailable: "1567 jobs available",
       image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop&crop=faces",
+        "/images/h6.png",
       buttonText: "Explore Pastry Chef vacancies",
     },
     {
@@ -57,7 +57,7 @@ const HotelRestaurantJobs = () => {
       title: "F&B Manager",
       jobsAvailable: "1567 jobs available",
       image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=200&fit=crop&crop=faces",
+        "/images/h7.png",
       buttonText: "Explore F&B Manager vacancies",
     },
     {
@@ -65,7 +65,7 @@ const HotelRestaurantJobs = () => {
       title: "Housekeeping",
       jobsAvailable: "1567 jobs available",
       image:
-        "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=200&fit=crop&crop=faces",
+        "/images/h8.png",
       buttonText: "Explore Housekeeping vacancies",
     },
   ];
@@ -94,7 +94,7 @@ const HotelRestaurantJobs = () => {
               <img
                 src={job.image}
                 alt={job.title}
-                className="w-full h-32 sm:h-48 object-cover rounded-2xl"
+                className="w-full h-32 sm:h-56 object-cover rounded-2xl"
               />
             </div>
 
