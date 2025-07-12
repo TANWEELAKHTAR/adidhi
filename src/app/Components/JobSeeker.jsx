@@ -1,7 +1,7 @@
 export default function JobSeeker() {
   return (
     <section className="w-full md:p-12 text-white">
-      <div className="w-full h-full relative p-6 md:p-12 bg-gradient-to-b from-[#ff4a24] to-black md:rounded-4xl flex items-center">
+      <div className="w-full h-full relative px-6 py-14 md:p-16 bg-gradient-to-b from-[#ff4a24] to-black md:rounded-4xl flex items-center">
         <div className="w-full lg:w-2/3">
           <img
             className="w-44 object-cover bg-white rounded-xl p-2"
@@ -11,9 +11,9 @@ export default function JobSeeker() {
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl my-6">
             Revolutionizing the <br className="hidden lg:block" /> Hospitality Job hunting.
           </h1>
-          <p className="font-normal text-2xl w-full lg:w-3/4">
+          <p className="font-normal text-xl w-full lg:w-3/4">
             The tourism & hospitality sector in India accounts for 4.3 Cr jobs,
-            which is 9.0% of the total employment in the country. Adidhi is
+            which is 9.0% of the total employment in the country. <span className="font-bold">Adidhi</span> is
             exclusively designed for meeting recruitment and career development
             in this sector.
           </p>

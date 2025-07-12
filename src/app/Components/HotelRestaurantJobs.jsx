@@ -6,7 +6,7 @@ const HotelRestaurantJobs = () => {
   const jobCategories = [
     {
       id: 1,
-      title: "Executive Chef",
+      title: "Chef",
       jobsAvailable: "1567 jobs available",
       image:
         "/images/h1.png",
@@ -54,7 +54,7 @@ const HotelRestaurantJobs = () => {
     },
     {
       id: 7,
-      title: "F&B Manager",
+      title: "Manager",
       jobsAvailable: "1567 jobs available",
       image:
         "/images/h7.png",
@@ -78,8 +78,8 @@ const HotelRestaurantJobs = () => {
           <br />
           leading hotels and restaurants.
         </h1>
-        <p className="text-xl md:text-2xl max-w-4xl mx-auto">
-          explore a wide range of job openings from leading hotel and restaurant
+        <p className="text-sm md:text-2xl max-w-4xl mx-auto">
+          Explore a wide range of job openings from leading hotel and restaurant
           chains.
           <br className="hidden sm:block" />
           From entry-level to executive roles — we've got something for

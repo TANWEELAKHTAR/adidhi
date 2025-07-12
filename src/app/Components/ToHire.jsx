@@ -6,7 +6,7 @@ export default function ToHire() {
       <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl my-6 text-center">
         <span className="text-[#DF6756]">Looking </span> to Hire?
       </h1>
-      <p className="text-xl md:text-2xl text-center">
+      <p className="text-sm md:text-2xl text-center">
         When Was the Last Time You Got More Than 3 Applicants for a Restaurant
         Vacancy?
       </p>

@@ -140,7 +140,7 @@ const Testimonial = () => {
   const renderJobSeekerCard = (testimonial, index) => (
     <div
       key={index}
-      className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 min-w-[280px] max-w-[280px] flex-shrink-0"
+      className="bg-white rounded-3xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 min-w-[280px] max-w-[280px] flex-shrink-0"
     >
       <div className="flex items-center mb-3">
         <img
@@ -162,7 +162,7 @@ const Testimonial = () => {
   const renderPartnerCard = (testimonial, index) => (
     <div
       key={index}
-      className="bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 min-w-[280px] max-w-[280px] flex-shrink-0"
+      className="bg-white rounded-3xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 min-w-[280px] max-w-[280px] flex-shrink-0"
     >
       <div className="flex items-center mb-3">
         <img
@@ -192,7 +192,7 @@ const Testimonial = () => {
           src="/images/quote.svg"
           alt=""
         />
-        <span className="font-medium text-lg md:text-3xl">{title}</span>
+        <span className="font-medium text-sm md:text-3xl">{title}</span>
       </div>
     </div>
   );
@@ -203,7 +203,7 @@ const Testimonial = () => {
         <h1 className="text-[#DF6756] text-4xl md:text-5xl lg:text-6xl font-bold mb-2 leading-tight">
           Our Users Speak:
         </h1>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-gray-800">
+        <h2 className="text-xl md:text-4xl lg:text-5xl font-normal text-gray-800">
           Hospitality Recruitment That Works
         </h2>
       </header>
@@ -215,7 +215,7 @@ const Testimonial = () => {
         <div className="overflow-hidden">
           <div
             ref={jobSeekerCarouselRef}
-            className="flex gap-2.5"
+            className="flex gap-4"
             onMouseEnter={() => handleCarouselMouseEnter(jobSeekerAnimRef)}
             onMouseLeave={() => handleCarouselMouseLeave(jobSeekerAnimRef)}
           >
@@ -234,7 +234,7 @@ const Testimonial = () => {
         <div className="overflow-hidden">
           <div
             ref={partnerCarouselRef}
-            className="flex gap-2.5"
+            className="flex gap-4"
             onMouseEnter={() => handleCarouselMouseEnter(partnerAnimRef)}
             onMouseLeave={() => handleCarouselMouseLeave(partnerAnimRef)}
           >
