@@ -1,7 +1,7 @@
 export default function CTA() {
   return (
     <div className="flex items-center justify-center flex-col p-6 m-10">
-        <h1 className="mt-20 text-4xl md:text-5xl lg:text-7xl text-center font-bold">
+        <h1 className="mt-20 text-3xl md:text-5xl lg:text-7xl text-center font-bold">
           Ready to hire <br />
           <span className="text-[#DF6756]">smarter and faster?</span>
         </h1>
@@ -16,7 +16,7 @@ export default function CTA() {
             src="./images/qr.png"
             alt=""
           />
-          <p className="mt-4 text-3xl md:text-5xl lg:text-4xl max-w-sm text-center md:text-start font-bold">
+          <p className="mt-4 text-2xl md:text-5xl lg:text-4xl max-w-sm text-center md:text-start font-bold">
             Scan this QR code with your phone to download Adidhi app.
           </p>
         </div>

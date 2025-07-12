@@ -48,7 +48,7 @@ const InfiniteJobsCarousel = () => {
             <img
               src={imgSrc}
               alt={`Job ${index + 1}`}
-              className="w-fit h-80 object-fit"
+              className="w-fit h-80 object-cover"
             />
           </div>
         ))}

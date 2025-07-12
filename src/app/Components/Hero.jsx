@@ -8,7 +8,7 @@ export default function Hero() {
           <span className="text-[#DF6756]">India's #1 App</span> <br />
           for Hotel & Restaurant Jobs
         </h1>
-        <p className="text-sm lg:text-2xl px-5 mt-4 text-center font-normal">
+        <p className="text-xs lg:text-2xl px-5 mt-4 text-center font-normal">
           Connecting job seekers with the right opportunities in the hotel and
           restaurant industry
         </p>
