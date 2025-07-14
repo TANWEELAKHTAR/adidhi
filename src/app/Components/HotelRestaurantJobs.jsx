@@ -7,7 +7,7 @@ const HotelRestaurantJobs = () => {
     {
       id: 1,
       title: "Chef",
-      jobsAvailable: "200 jobs available",
+      jobsAvailable: "200 jobs",
       image:
         "/images/h1.png",
       buttonText: "Explore Executive Chef vacancies",
@@ -15,7 +15,7 @@ const HotelRestaurantJobs = () => {
     {
       id: 2,
       title: "Sous Chef",
-      jobsAvailable: "333 jobs available",
+      jobsAvailable: "333 jobs",
       image:
         "/images/h2.png",
       buttonText: "Explore Sous Chef vacancies",
@@ -23,7 +23,7 @@ const HotelRestaurantJobs = () => {
     {
       id: 3,
       title: "Waiter",
-      jobsAvailable: "678 jobs available",
+      jobsAvailable: "678 jobs",
       image:
         "/images/h3.png",
       buttonText: "Explore Waiter vacancies",
@@ -31,7 +31,7 @@ const HotelRestaurantJobs = () => {
     {
       id: 4,
       title: "Waitress",
-      jobsAvailable: "389 jobs available",
+      jobsAvailable: "389 jobs",
       image:
         "/images/h4.png",
       buttonText: "Explore Waitress vacancies",
@@ -39,15 +39,15 @@ const HotelRestaurantJobs = () => {
     {
       id: 5,
       title: "Barista",
-      jobsAvailable: "105 jobs available",
+      jobsAvailable: "105 jobs",
       image:
         "/images/h5.png",
       buttonText: "Explore Barista vacancies",
     },
     {
       id: 6,
-      title: "Pastry Chef",
-      jobsAvailable: "369 jobs available",
+      title: "Pastry chef",
+      jobsAvailable: "369 jobs",
       image:
         "/images/h6.png",
       buttonText: "Explore Pastry Chef vacancies",
@@ -55,7 +55,7 @@ const HotelRestaurantJobs = () => {
     {
       id: 7,
       title: "Manager",
-      jobsAvailable: "25 jobs available",
+      jobsAvailable: "25 jobs",
       image:
         "/images/h7.png",
       buttonText: "Explore F&B Manager vacancies",
@@ -63,7 +63,7 @@ const HotelRestaurantJobs = () => {
     {
       id: 8,
       title: "Housekeeping",
-      jobsAvailable: "100 jobs available",
+      jobsAvailable: "100 jobs",
       image:
         "/images/h8.png",
       buttonText: "Explore Housekeeping vacancies",
@@ -100,11 +100,11 @@ const HotelRestaurantJobs = () => {
 
             {/* Content */}
             <div className="p-4">
-              <h3 className="font-semibold text-lg md:text-xl text-gray-900 text-center">
+              <h3 className="font-semibold text-sm md:text-xl text-gray-900 text-center">
                 {job.title}
               </h3>
-              <p className="text-xs font-medium mb-4 text-center">
-                {job.jobsAvailable}
+              <p className="text-xs font-medium mb-4 text-center mt-2">
+                {job.jobsAvailable} <br />available
               </p>
 
               {/* Button */}

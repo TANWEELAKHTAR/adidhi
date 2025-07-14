@@ -38,8 +38,8 @@ const InfiniteJobsCarousel = () => {
   }, []);
 
   return (
-    <div className="w-full py-12 overflow-hidden">
-      <div ref={carouselRef} className="w-fit flex will-change-transform gap-3">
+    <div className="w-full mb-12 overflow-hidden">
+      <div ref={carouselRef} className="w-fit flex items-center gap-3">
         {duplicatedData.map((imgSrc, index) => (
           <div
             key={`${imgSrc}-${index}`}
@@ -48,7 +48,7 @@ const InfiniteJobsCarousel = () => {
             <img
               src={imgSrc}
               alt={`Job ${index + 1}`}
-              className="w-fit h-80 object-cover"
+              className="h-48 md:h-80 object-fit"
             />
           </div>
         ))}

@@ -4,7 +4,7 @@ export default function JobSeeker() {
       <div className="w-full h-full relative px-6 py-14 md:p-16 bg-gradient-to-b from-[#ff4a24] to-black md:rounded-4xl flex items-center">
         <div className="w-full lg:w-2/3">
           <img
-            className="w-44 object-cover bg-white rounded-xl p-2"
+            className="bg-white rounded-xl p-2"
             src="/images/adidhi-logo.svg"
             alt=""
           />
