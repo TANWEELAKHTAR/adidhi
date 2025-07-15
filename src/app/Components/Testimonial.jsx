@@ -148,11 +148,11 @@ const Testimonial = () => {
           alt={testimonial.name}
           className="w-10 h-10 rounded-full object-cover mr-3 border-2 border-gray-200"
         />
-        <h3 className="font-medium text-gray-900 text-sm md:text-xl">
+        <h3 className="font-semibold text-gray-900 text-sm md:text-xl">
           {testimonial.name}
         </h3>
       </div>
-      <p className="text-gray-600 leading-relaxed text-xs md:text-sm">
+      <p className="text-gray-600 leading-relaxed text-xs md:text-sm font-semibold">
         {testimonial.text}
       </p>
     </div>
@@ -171,13 +171,13 @@ const Testimonial = () => {
           className="w-10 h-10 rounded-full object-cover mr-3 border-2 border-gray-200"
         />
         <div>
-          <h3 className="font-medium text-sm md:text-xl text-gray-900">
+          <h3 className="font-semibold text-sm md:text-xl text-gray-900">
             {testimonial.name}
           </h3>
           <p className="text-xs text-gray-500">{testimonial.location}</p>
         </div>
       </div>
-      <p className="text-gray-600 leading-relaxed text-xs md:text-sm">
+      <p className="text-gray-600 leading-relaxed text-xs md:text-sm font-semibold">
         {testimonial.text}
       </p>
     </div>

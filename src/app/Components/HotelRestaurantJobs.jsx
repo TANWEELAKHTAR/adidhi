@@ -78,7 +78,7 @@ const HotelRestaurantJobs = () => {
           <br />
           leading hotels and restaurants.
         </h1>
-        <p className="text-sm md:text-2xl max-w-4xl mx-auto">
+        <p className="md:text-2xl max-w-4xl mx-auto">
           Explore a wide range of job openings from leading hotel and restaurant
           chains.
           <br className="hidden sm:block" />

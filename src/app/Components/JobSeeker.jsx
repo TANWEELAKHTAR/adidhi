@@ -17,15 +17,15 @@ export default function JobSeeker() {
             exclusively designed for meeting recruitment and career development
             in this sector.
           </p>
-          <div className="flex items-center mt-6 gap-4">
+          <div className="flex items-center mt-8 gap-4">
             <img
               className="w-16 md:w-20 h-16 md:h-20 object-fit"
               src="/images/js1.svg"
               alt=""
             />
             <div>
-              <h2 className="font-bold text-2xl md:text-3xl">Totally Free to Use</h2>
-              <p className="font-normal text-lg md:text-xl">No charges or hidden fees</p>
+              <h2 className="font-bold text-xl md:text-3xl">Totally Free to Use</h2>
+              <p className="font-normal text-sm md:text-xl">No charges or hidden fees</p>
             </div>
           </div>
           <div className="flex items-center mt-4 gap-4">
@@ -35,8 +35,8 @@ export default function JobSeeker() {
               alt=""
             />
             <div>
-              <h2 className="font-bold text-2xl md:text-3xl">Talk Directly to Employers</h2>
-              <p className="font-normal text-lg md:text-xl">
+              <h2 className="font-bold text-xl md:text-3xl">Talk Directly to Employers</h2>
+              <p className="font-normal text-sm md:text-xl">
                 No middlemen. Chat directly
               </p>
             </div>
@@ -48,8 +48,8 @@ export default function JobSeeker() {
               alt=""
             />
             <div>
-              <h2 className="font-bold text-2xl md:text-3xl">Opportunities Across India</h2>
-              <p className="font-normal text-lg md:text-xl">
+              <h2 className="font-bold text-xl md:text-3xl">Opportunities Across India</h2>
+              <p className="font-normal text-sm md:text-xl">
                 Explore jobs across the country.
               </p>
             </div>

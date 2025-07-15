@@ -103,7 +103,7 @@ const FAQ = () => {
               onClick={() => toggleItem(index)}
               className="w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between"
             >
-              <span className="text-lg font-medium text-gray-900 pr-4">
+              <span className="text-lg font-medium pr-4">
                 {item.question}
               </span>
               <div className="flex-shrink-0">
