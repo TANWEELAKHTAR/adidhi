@@ -21,7 +21,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <InfiniteJobsCarousel/>
+      <InfiniteJobsCarousel />
     </>
   );
 }

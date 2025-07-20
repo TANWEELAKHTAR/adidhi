@@ -32,6 +32,14 @@ export default function Footer() {
                 Contact us
               </a>
             </li>
+            <li>
+              <Link
+                href={"/delete-data"}
+                className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-light"
+              >
+                Delete data
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -66,7 +74,11 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="mt-10 text-center"><span className="text-xs md:text-sm">Copyright © 2025. Adidhi. All rights reserved.</span></div>
+      <div className="mt-10 text-center">
+        <span className="text-xs md:text-sm">
+          Copyright © 2025. Adidhi. All rights reserved.
+        </span>
+      </div>
     </footer>
   );
 }

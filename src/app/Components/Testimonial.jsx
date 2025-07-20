@@ -14,74 +14,73 @@ const Testimonial = () => {
     {
       name: "Abhay Gupta",
       image:
-        "https://images.unsplash.com/photo-1528892952291-009c663ce843?q=80&w=2144&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1717672134053-a9b92d61c017?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Adidhi made my job search so much easier. I found my dream job in a star hotel within days!",
     },
     {
       name: "Divya Sharma",
       image:
-        "https://images.unsplash.com/photo-1519895609939-d2a6491c1196?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://plus.unsplash.com/premium_photo-1723568666044-1b066e26b1fb?q=80&w=721&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "I loved how Adidhi matched me with roles that fit my experience and skills. The process was smooth and stress-free.",
     },
     {
       name: "Kalpana Das",
       image:
-        "https://images.unsplash.com/photo-1514626585111-9aa86183ac98?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://plus.unsplash.com/premium_photo-1734603746817-620d7428f265?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Thanks to Adidhi, I connected with great employers and landed a job that suits my schedule perfectly.",
     },
     {
       name: "Ibrahim Ali",
       image:
-        "https://images.unsplash.com/photo-1509460913899-515f1df34fea?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1689218744786-9546da7b6873?q=80&w=767&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "The app's interface is super easy to use, and I received regular updates about my applications. Highly recommended for anyone in hospitality!",
     },
     {
       name: "Saravanan P",
       image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1603391277959-4b85cc6492f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "With Adidhi, I finally found a workplace where I feel valued. The support and opportunities are amazing!",
     },
     {
       name: "Anup Kumar",
       image:
-        "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1702787388611-d040a775c5c3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "With Adidhi, I discovered a team that truly believes in my growth. Every day feels purposeful and empowering!",
     },
   ];
 
   const partnerTestimonials = [
-  {
-    name: "Beycho Cafe",
-    location: "Wayanad",
-    text: "With Adidhi, we've significantly reduced our hiring time and improved the quality of our hires. It's the perfect solution for busy hotel owners.",
-    image: "/images/p3.png",
-  },
-  {
-    name: "Mikas Biriyani",
-    location: "Kannur",
-    text: "Thanks to Adidhi, we connected with qualified candidates who truly fit our team culture. The app's user-friendly interface makes recruitment seamless.",
-    image: "/images/p4.png",
-  },
-  {
-    name: "Raandhal",
-    location: "Kannur",
-    text: "Adidhi helped us discover talented professionals who meet our high standards. It's a game-changer for hospitality recruitment.",
-    image: "/images/p5.png",
-  },
-  {
-    name: "BUNGALOW 47",
-    location: "Wayanad",
-    text: "Finding reliable hospitality staff used to be a challenge, but Adidhi's smart matching features have made recruitment effortless and effective.",
-    image: "/images/p1.png",
-  },
-  {
-    name: "MRA",
-    location: "Kochi",
-    text: "Adidhi has transformed our hiring process. We now find skilled hospitality staff quickly and efficiently, saving us valuable time.",
-    image: "/images/p2.png",
-  },
-];
-
+    {
+      name: "Beycho Cafe",
+      location: "Wayanad",
+      text: "With Adidhi, we've significantly reduced our hiring time and improved the quality of our hires. It's the perfect solution for busy hotel owners.",
+      image: "/images/p3.png",
+    },
+    {
+      name: "Mikas Biriyani",
+      location: "Kannur",
+      text: "Thanks to Adidhi, we connected with qualified candidates who truly fit our team culture. The app's user-friendly interface makes recruitment seamless.",
+      image: "/images/p4.png",
+    },
+    {
+      name: "Raandhal",
+      location: "Kannur",
+      text: "Adidhi helped us discover talented professionals who meet our high standards. It's a game-changer for hospitality recruitment.",
+      image: "/images/p5.png",
+    },
+    {
+      name: "BUNGALOW 47",
+      location: "Wayanad",
+      text: "Finding reliable hospitality staff used to be a challenge, but Adidhi's smart matching features have made recruitment effortless and effective.",
+      image: "/images/p1.png",
+    },
+    {
+      name: "MRA",
+      location: "Kochi",
+      text: "Adidhi has transformed our hiring process. We now find skilled hospitality staff quickly and efficiently, saving us valuable time.",
+      image: "/images/p2.png",
+    },
+  ];
 
   // Configuration constants
   const ANIMATION_CONFIG = {
@@ -146,7 +145,7 @@ const Testimonial = () => {
         <img
           src={testimonial.image}
           alt={testimonial.name}
-          className="w-10 h-10 rounded-full object-cover mr-3 border-2 border-gray-200"
+          className="w-10 h-10 rounded-full object-cover mr-3 border-2 object-top border-gray-200"
         />
         <h3 className="font-semibold text-gray-900 text-sm md:text-xl">
           {testimonial.name}

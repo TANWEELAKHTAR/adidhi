@@ -1,77 +1,140 @@
-"use client"
-import React from 'react';
-import Head from 'next/head';
-import Footer from '../Components/Footer';
-import NavBar from '../Components/NavBar';
+"use client";
+import React from "react";
+import Head from "next/head";
 
 const PrivacyPolicy = () => {
   return (
     <>
       <Head>
-        <title>Privacy Policy - Adidhi</title>
-        <meta name="description" content="Adidhi Privacy Policy - Learn about our data collection, use, and disclosure practices" />
+        <title>Terms & Policy - Adidhi</title>
+        <meta
+          name="description"
+          content="Adidhi Privacy Policy - Learn about our data collection, use, and disclosure practices"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <NavBar/>
       <div className="min-h-screen bg-gray-50 mt-20">
         <main className="max-w-4xl mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-sm p-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
-            
+            <h1 className="text-4xl font-bold text-gray-900 mb-6">
+              Privacy Policy
+            </h1>
+
             <div className="prose max-w-none">
               <p className="text-gray-700 mb-6 leading-relaxed">
-                This Privacy Policy describes Our policies and procedures on the collection, use, and disclosure of Your 
-                information when You use the Service and tells You about Your privacy rights and how the law protects You. 
-                We use Your Personal data to provide and improve the Service. By using the Service, You agree to the 
-                collection and use of information in accordance with this Privacy Policy.
+                This Privacy Policy describes Our policies and procedures on the
+                collection, use, and disclosure of Your information when You use
+                the Service and tells You about Your privacy rights and how the
+                law protects You. We use Your Personal data to provide and
+                improve the Service. By using the Service, You agree to the
+                collection and use of information in accordance with this
+                Privacy Policy.
               </p>
 
               <div className="bg-gray-50 p-4 rounded-lg mb-8">
                 <div className="flex items-center text-sm text-gray-600">
-                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.414-1.414L11 9.586V6z" clipRule="evenodd" />
+                  <svg
+                    className="w-4 h-4 mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.414-1.414L11 9.586V6z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                   Last updated: January 27, 2025
                 </div>
               </div>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Interpretation and Definitions</h2>
-                
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Interpretation</h3>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Interpretation and Definitions
+                </h2>
+
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  Interpretation
+                </h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  The words of which the initial letter is capitalized have meanings defined under the following conditions. The 
-                  following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+                  The words of which the initial letter is capitalized have
+                  meanings defined under the following conditions. The following
+                  definitions shall have the same meaning regardless of whether
+                  they appear in singular or in plural.
                 </p>
 
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Definitions</h3>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  Definitions
+                </h3>
                 <p className="text-gray-700 mb-4 leading-relaxed">
                   For the purposes of this Privacy Policy:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
-                  <li><strong>Account:</strong> A unique account created for You to access our Service.</li>
-                  <li><strong>Affiliate:</strong> An entity that controls, is controlled by or is under common control with a party.</li>
-                  <li><strong>Application:</strong> Refers to Adidhi Hospitality, the software program provided by the Company.</li>
-                  <li><strong>Company:</strong> Adidhi Hospitality Private Limited.</li>
-                  <li><strong>Country:</strong> Refers to Kerala, India.</li>
-                  <li><strong>Device:</strong> Any device that can access the Service such as a computer, a cellphone, or a digital tablet.</li>
-                  <li><strong>Personal Data:</strong> Information that relates to an identified or identifiable individual.</li>
-                  <li><strong>Service:</strong> Refers to the Application.</li>
-                  <li><strong>Service Provider:</strong> A natural or legal person who processes the data on behalf of the Company.</li>
-                  <li><strong>Usage Data:</strong> Data collected automatically, either generated by the use of the Service or from the Service infrastructure itself.</li>
-                  <li><strong>You:</strong> The individual accessing or using the Service, or the company or other legal entity on behalf of which such individual is accessing or using the Service.</li>
+                  <li>
+                    <strong>Account:</strong> A unique account created for You
+                    to access our Service.
+                  </li>
+                  <li>
+                    <strong>Affiliate:</strong> An entity that controls, is
+                    controlled by or is under common control with a party.
+                  </li>
+                  <li>
+                    <strong>Application:</strong> Refers to Adidhi Hospitality,
+                    the software program provided by the Company.
+                  </li>
+                  <li>
+                    <strong>Company:</strong> Adidhi Hospitality Private
+                    Limited.
+                  </li>
+                  <li>
+                    <strong>Country:</strong> Refers to Kerala, India.
+                  </li>
+                  <li>
+                    <strong>Device:</strong> Any device that can access the
+                    Service such as a computer, a cellphone, or a digital
+                    tablet.
+                  </li>
+                  <li>
+                    <strong>Personal Data:</strong> Information that relates to
+                    an identified or identifiable individual.
+                  </li>
+                  <li>
+                    <strong>Service:</strong> Refers to the Application.
+                  </li>
+                  <li>
+                    <strong>Service Provider:</strong> A natural or legal person
+                    who processes the data on behalf of the Company.
+                  </li>
+                  <li>
+                    <strong>Usage Data:</strong> Data collected automatically,
+                    either generated by the use of the Service or from the
+                    Service infrastructure itself.
+                  </li>
+                  <li>
+                    <strong>You:</strong> The individual accessing or using the
+                    Service, or the company or other legal entity on behalf of
+                    which such individual is accessing or using the Service.
+                  </li>
                 </ul>
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Collecting and Using Your Personal Data</h2>
-                
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Types of Data Collected</h3>
-                
-                <h4 className="text-lg font-semibold text-gray-700 mb-2">Personal Data</h4>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Collecting and Using Your Personal Data
+                </h2>
+
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  Types of Data Collected
+                </h3>
+
+                <h4 className="text-lg font-semibold text-gray-700 mb-2">
+                  Personal Data
+                </h4>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  While using Our Service, We may ask You to provide Us with certain personally identifiable information that 
-                  can be used to contact or identify You. Personally identifiable information may include, but is not limited to:
+                  While using Our Service, We may ask You to provide Us with
+                  certain personally identifiable information that can be used
+                  to contact or identify You. Personally identifiable
+                  information may include, but is not limited to:
                 </p>
                 <ul className="list-disc pl-6 space-y-1 text-gray-700 mb-6">
                   <li>Email address</li>
@@ -80,52 +143,80 @@ const PrivacyPolicy = () => {
                   <li>Address, State, Province, ZIP/Postal code, City</li>
                 </ul>
 
-                <h4 className="text-lg font-semibold text-gray-700 mb-2">Usage Data</h4>
+                <h4 className="text-lg font-semibold text-gray-700 mb-2">
+                  Usage Data
+                </h4>
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Usage Data is collected automatically when using the Service. Usage Data may include information such as 
-                  Your Device's IP address, browser type, browser version, the pages of our Service that You visit, the time 
-                  spent on those pages, and other diagnostic data.
+                  Usage Data is collected automatically when using the Service.
+                  Usage Data may include information such as Your Device's IP
+                  address, browser type, browser version, the pages of our
+                  Service that You visit, the time spent on those pages, and
+                  other diagnostic data.
                 </p>
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Retention of Your Personal Data</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Retention of Your Personal Data
+                </h2>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  The Company will retain Your Personal Data only for as long as necessary for the purposes set out in this 
-                  Privacy Policy. We will retain Usage Data for internal analysis purposes to strengthen security or improve functionality.
+                  The Company will retain Your Personal Data only for as long as
+                  necessary for the purposes set out in this Privacy Policy. We
+                  will retain Usage Data for internal analysis purposes to
+                  strengthen security or improve functionality.
                 </p>
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Security of Your Personal Data</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Security of Your Personal Data
+                </h2>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  The security of Your Personal Data is important to Us. However, no method of transmission over the Internet is 100% secure.
+                  The security of Your Personal Data is important to Us.
+                  However, no method of transmission over the Internet is 100%
+                  secure.
                 </p>
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Children&apos;s Privacy</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Children&apos;s Privacy
+                </h2>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  Our Service does not address anyone under the age of 13. If We become aware that We have collected 
-                  Personal Data from anyone under 13 without parental consent, We will take steps to remove that information.
+                  Our Service does not address anyone under the age of 13. If We
+                  become aware that We have collected Personal Data from anyone
+                  under 13 without parental consent, We will take steps to
+                  remove that information.
                 </p>
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Changes to this Privacy Policy</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Changes to this Privacy Policy
+                </h2>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  We may update Our Privacy Policy from time to time. Changes to this Privacy Policy are effective when posted on this page.
+                  We may update Our Privacy Policy from time to time. Changes to
+                  this Privacy Policy are effective when posted on this page.
                 </p>
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Contact Us</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Contact Us
+                </h2>
                 <p className="text-gray-700 mb-4 leading-relaxed">
-                  If you have any questions about this Privacy Policy, You can contact us:
+                  If you have any questions about this Privacy Policy, You can
+                  contact us:
                 </p>
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <p className="text-gray-700">
-                    By email: <a href="mailto:support@adidhi.com" className="text-blue-600 hover:text-blue-800 underline">support@adidhi.com</a>
+                    By email:{" "}
+                    <a
+                      href="mailto:support@adidhi.com"
+                      className="text-blue-600 hover:text-blue-800 underline"
+                    >
+                      support@adidhi.com
+                    </a>
                   </p>
                 </div>
               </section>
@@ -133,7 +224,6 @@ const PrivacyPolicy = () => {
           </div>
         </main>
       </div>
-      <Footer/>
     </>
   );
 };

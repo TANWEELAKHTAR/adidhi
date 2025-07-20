@@ -7,65 +7,57 @@ const HotelRestaurantJobs = () => {
     {
       id: 1,
       title: "Chef",
-      jobsAvailable: "200 jobs",
-      image:
-        "/images/h1.png",
+      jobsAvailable: "200",
+      image: "/images/h1.png",
       buttonText: "Explore Executive Chef vacancies",
     },
     {
       id: 2,
       title: "Sous Chef",
-      jobsAvailable: "333 jobs",
-      image:
-        "/images/h2.png",
+      jobsAvailable: "333",
+      image: "/images/h2.jpg",
       buttonText: "Explore Sous Chef vacancies",
     },
     {
       id: 3,
       title: "Waiter",
-      jobsAvailable: "678 jobs",
-      image:
-        "/images/h3.png",
+      jobsAvailable: "678",
+      image: "/images/h3.png",
       buttonText: "Explore Waiter vacancies",
     },
     {
       id: 4,
       title: "Waitress",
-      jobsAvailable: "389 jobs",
-      image:
-        "/images/h4.png",
+      jobsAvailable: "389",
+      image: "/images/h4.jpeg",
       buttonText: "Explore Waitress vacancies",
     },
     {
       id: 5,
       title: "Barista",
-      jobsAvailable: "105 jobs",
-      image:
-        "/images/h5.png",
+      jobsAvailable: "105",
+      image: "/images/h5.webp",
       buttonText: "Explore Barista vacancies",
     },
     {
       id: 6,
       title: "Pastry chef",
-      jobsAvailable: "369 jobs",
-      image:
-        "/images/h6.png",
+      jobsAvailable: "369",
+      image: "/images/h6.jpg",
       buttonText: "Explore Pastry Chef vacancies",
     },
     {
       id: 7,
       title: "Manager",
-      jobsAvailable: "25 jobs",
-      image:
-        "/images/h7.png",
+      jobsAvailable: "25",
+      image: "/images/h7.png",
       buttonText: "Explore F&B Manager vacancies",
     },
     {
       id: 8,
       title: "Housekeeping",
-      jobsAvailable: "100 jobs",
-      image:
-        "/images/h8.png",
+      jobsAvailable: "100",
+      image: "/images/h8.jpeg",
       buttonText: "Explore Housekeeping vacancies",
     },
   ];
@@ -88,43 +80,44 @@ const HotelRestaurantJobs = () => {
       </div>
       <div className="bg-[#F2F2F2] p-8 rounded-2xl">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 mb-12">
-        {jobCategories.map((job) => (
-          <div key={job.id} className=" rounded-lg overflow-hidden">
-            <div className="w-full">
-              <img
-                src={job.image}
-                alt={job.title}
-                className="w-full h-32 sm:h-56 object-cover rounded-2xl"
-              />
-            </div>
+          {jobCategories.map((job) => (
+            <div key={job.id} className=" rounded-lg overflow-hidden">
+              <div className="w-full">
+                <img
+                  src={job.image}
+                  alt={job.title}
+                  className="w-full h-32 sm:h-56 object-cover rounded-2xl"
+                />
+              </div>
 
-            {/* Content */}
-            <div className="p-4">
-              <h3 className="font-semibold text-sm md:text-xl text-gray-900 text-center">
-                {job.title}
-              </h3>
-              <p className="text-xs font-medium mb-4 text-center mt-2">
-                {job.jobsAvailable} <br />available
-              </p>
+              {/* Content */}
+              <div className="p-4">
+                <h3 className="font-semibold text-sm md:text-xl text-gray-900 text-center">
+                  {job.title}
+                </h3>
+                <p className="text-xs font-medium mb-4 text-center mt-2">
+                  <span className="font-bold">{job.jobsAvailable}</span> jobs{" "}
+                  <br />
+                  available
+                </p>
 
-              {/* Button */}
-              <button className="hidden md:block w-full bg-[#753E34] hover:bg-amber-800 text-white py-3 px-4 rounded-full text-xs transition-colors duration-200">
-                {job.buttonText}
-              </button>
-              <button className="block md:hidden w-full bg-[#753E34] hover:bg-amber-800 text-white py-2 px-4 rounded-full text-xs transition-colors duration-200">
-                Explore
-              </button>
+                {/* Button */}
+                <button className="hidden md:block w-full bg-[#753E34] hover:bg-amber-800 text-white py-3 px-4 rounded-full text-xs transition-colors duration-200">
+                  {job.buttonText}
+                </button>
+                <button className="block md:hidden w-full bg-[#753E34] hover:bg-amber-800 text-white py-2 px-4 rounded-full text-xs transition-colors duration-200">
+                  Explore
+                </button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className="text-center">
+          <button className="bg-[#D06E5C] hover:bg-red-500 text-white font-semibold py-4 px-8 rounded-full text-xs sm:text-sm md:text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+            Explore latest vacancies &rarr;
+          </button>
+        </div>
       </div>
-      <div className="text-center">
-        <button className="bg-[#D06E5C] hover:bg-red-500 text-white font-semibold py-4 px-8 rounded-full text-xs sm:text-sm md:text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
-          Explore latest vacancies &rarr;
-        </button>
-      </div>
-      </div>
-      
     </div>
   );
 };
