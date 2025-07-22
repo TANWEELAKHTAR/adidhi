@@ -18,6 +18,14 @@ export default function Footer() {
           <ul className="space-y-3">
             <li>
               <Link
+                href={"/"}
+                className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-light"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
                 href={"/terms-policy"}
                 className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-light"
               >
@@ -25,12 +33,12 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <a
-                href="mailto:support@adidhi.com.com"
+              <Link
+                href={"/contact-us"}
                 className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-light"
               >
                 Contact us
-              </a>
+              </Link>
             </li>
             <li>
               <Link

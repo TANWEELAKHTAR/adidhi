@@ -57,7 +57,7 @@ const HotelRestaurantJobs = () => {
       id: 8,
       title: "Housekeeping",
       jobsAvailable: "100",
-      image: "/images/h8.jpeg",
+      image: "/images/h8.webp",
       buttonText: "Explore Housekeeping vacancies",
     },
   ];
@@ -86,7 +86,7 @@ const HotelRestaurantJobs = () => {
                 <img
                   src={job.image}
                   alt={job.title}
-                  className="w-full h-32 sm:h-56 object-cover rounded-2xl"
+                  className="w-full h-32 sm:h-56 object-cover rounded-2xl object-center"
                 />
               </div>
 
