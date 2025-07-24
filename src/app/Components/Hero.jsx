@@ -13,10 +13,10 @@ export default function Hero() {
           restaurant industry
         </p>
         <div className="mt-6 flex gap-4">
-          <a href="">
+          <a href="https://play.google.com/store/apps/details?id=com.adidhi.hospitality">
             <img className="w-44" src="./images/google-play-store.png" alt="" />
           </a>
-          <a href="">
+          <a href="https://apps.apple.com/in/app/adidhi-hospitality/id6743770521?uo=2">
             <img className="w-44" src="./images/apple-store.png" alt="" />
           </a>
         </div>

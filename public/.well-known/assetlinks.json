@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.adidhi.hospitality",
+      "sha256_cert_fingerprints": [
+        "AB:DF:78:BC:F7:55:6F:96:12:0F:1D:BB:F4:57:12:67:87:5B:49:4D:F1:44:63:71:F2:B7:66:FE:B7:4A:7E:6F",
+        "8D:19:F2:9D:B9:8B:ED:E7:4E:7D:44:0F:C1:27:63:0F:69:AE:9F:D3:C9:4A:E5:00:C8:9A:C4:79:38:91:C1:9C"
+      ]
+    }
+  }
+]
