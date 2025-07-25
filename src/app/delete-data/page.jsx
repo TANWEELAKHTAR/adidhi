@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Mail, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function DeleteDataForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -13,7 +13,7 @@ export default function DeleteDataForm() {
 
     try {
       const formData = new FormData(event.target);
-      formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+      formData.append("access_key", process.env.NEXT_PUBLIC_WEB3_ACCESS_KEY);
 
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
@@ -31,7 +31,7 @@ export default function DeleteDataForm() {
 
       if (result.success) {
         setSubmitStatus("success");
-        event.target.reset(); // Clear the form
+        event.target.reset();
       } else {
         setSubmitStatus("error");
       }
@@ -46,7 +46,6 @@ export default function DeleteDataForm() {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900">
             Delete <span className="text-orange-500">Your Data</span>
@@ -55,10 +54,8 @@ export default function DeleteDataForm() {
 
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            {/* Left Side - Form */}
             <div className="p-8 lg:p-12">
               <form onSubmit={handleSubmit} className="space-y-8">
-                {/* Success/Error Messages */}
                 {submitStatus === "success" && (
                   <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg">
                     <p className="font-medium">Success!</p>
@@ -80,7 +77,6 @@ export default function DeleteDataForm() {
                   </div>
                 )}
 
-                {/* Full Name Field */}
                 <div>
                   <label
                     htmlFor="fullName"
@@ -98,7 +94,6 @@ export default function DeleteDataForm() {
                   />
                 </div>
 
-                {/* Email Field */}
                 <div>
                   <label
                     htmlFor="email"
@@ -119,7 +114,6 @@ export default function DeleteDataForm() {
                   </div>
                 </div>
 
-                {/* Reason Field */}
                 <div>
                   <label
                     htmlFor="reason"
@@ -136,7 +130,6 @@ export default function DeleteDataForm() {
                   />
                 </div>
 
-                {/* Submit Button */}
                 <button
                   type="submit"
                   disabled={isSubmitting}
@@ -147,9 +140,7 @@ export default function DeleteDataForm() {
               </form>
             </div>
 
-            {/* Right Side - Information */}
             <div className="bg-gray-50 p-8 lg:p-12">
-              {/* How Data Deletion Works */}
               <div className="mb-12">
                 <h2 className="text-xl font-bold text-gray-900 mb-4">
                   How Data Deletion Works
@@ -161,9 +152,7 @@ export default function DeleteDataForm() {
                 </p>
               </div>
 
-              {/* Contact Information */}
               <div className="space-y-8">
-                {/* Email Support */}
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">

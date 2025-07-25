@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-black text-white py-8 px-6 lg:px-16">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-12 lg:gap-16">
         <div className="col-span-3">
-          <img src=".\images\adidhi-logo-vertical-white.svg" alt="" />
+          <Link href={"/"}><img src=".\images\adidhi-logo-vertical-white.svg" alt="" /></Link>
           <p className="text-gray-300 text-sm md:w-2/3 mt-4">
             Adidhi Hospitality Solutions Pvt Ltd Malabar Innovation
             Entrepreneurship Zone, Building No:446, Mangattuparamba, Near Kannur

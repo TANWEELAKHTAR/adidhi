@@ -1,3 +1,4 @@
+"use client"
 export default function CTA() {
   return (
     <div className="flex items-center justify-center flex-col p-6 mb-20">
@@ -26,7 +27,23 @@ export default function CTA() {
         </p>
       </div>
       <div className="md:hidden mt-10">
-        <button className="text-lg px-4 py-2 rounded-full text-white bg-[#DF6756] font-bold">
+        <button
+          className="text-sm md:text-lg px-4 py-2 rounded-full text-white bg-[#DF6756] font-bold cursor-pointer"
+          onClick={() => {
+            const userAgent =
+              navigator.userAgent || navigator.vendor || window.opera;
+
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+              window.location.href =
+                "https://apps.apple.com/in/app/adidhi-hospitality/id6743770521?uo=2";
+            } else if (/android/i.test(userAgent)) {
+              window.location.href =
+                "https://play.google.com/store/apps/details?id=com.adidhi.hospitality";
+            } else {
+              alert("Please open this link on your mobile device.");
+            }
+          }}
+        >
           Download the app
         </button>
       </div>

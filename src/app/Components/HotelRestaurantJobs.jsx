@@ -63,7 +63,7 @@ const HotelRestaurantJobs = () => {
   ];
 
   return (
-    <div className="w-full p-6 md:p-14 py-8">
+    <div className="w-full p-6 md:p-14">
       <div className="text-center mb-12">
         <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl my-6">
           <span className="text-[#DF6756]">Get hired by </span>

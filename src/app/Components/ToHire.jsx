@@ -2,7 +2,7 @@
 
 export default function ToHire() {
   return (
-    <section className="w-full relative mt-16 p-6">
+    <section className="w-full relative mt-10 p-6">
       <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl my-6 text-center">
         <span className="text-[#DF6756]">Looking </span> to Hire?
       </h1>
