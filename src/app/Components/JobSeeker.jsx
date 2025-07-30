@@ -3,11 +3,6 @@ export default function JobSeeker() {
     <section className="w-full md:p-12 text-white">
       <div className="w-full h-full relative px-6 py-14 md:p-16 bg-gradient-to-b from-[#ff4a24] to-black md:rounded-4xl flex items-center">
         <div className="w-full lg:w-2/3">
-          <img
-            className="bg-white rounded-xl p-2"
-            src="/images/adidhi-logo.svg"
-            alt=""
-          />
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl my-6">
             Revolutionizing the <br className="hidden lg:block" /> Hospitality
             Job hunting.

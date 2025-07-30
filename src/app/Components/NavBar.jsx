@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <nav className="fixed top-0 left-0 z-[999] w-full flex items-center justify-between bg-[#FFFFFF] py-3 px-6 md:px-32">
+    <nav className="fixed top-0 left-0 z-[999] w-full flex items-center justify-between bg-[#FFFFFF] py-3 px-6 md:px-32 shadow-xl">
       <Link href={"/"}>
         <img
           className="w-36 h-16 object-fit"

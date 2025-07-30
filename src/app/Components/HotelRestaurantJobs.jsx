@@ -100,12 +100,48 @@ const HotelRestaurantJobs = () => {
                   <br />
                   available
                 </p>
+                <button
+                  className="hidden md:block w-full bg-[#753E34] hover:bg-amber-800 text-white py-3 px-4 rounded-full text-xs transition-colors duration-200"
+                  onClick={() => {
+                    const userAgent =
+                      navigator.userAgent || navigator.vendor || window.opera;
 
-                {/* Button */}
-                <button className="hidden md:block w-full bg-[#753E34] hover:bg-amber-800 text-white py-3 px-4 rounded-full text-xs transition-colors duration-200">
+                    if (
+                      /iPad|iPhone|iPod/.test(userAgent) &&
+                      !window.MSStream
+                    ) {
+                      window.location.href =
+                        "https://apps.apple.com/in/app/adidhi-hospitality/id6743770521?uo=2";
+                    } else if (/android/i.test(userAgent)) {
+                      window.location.href =
+                        "https://play.google.com/store/apps/details?id=com.adidhi.hospitality";
+                    } else {
+                      alert("Please open this link on your mobile device.");
+                    }
+                  }}
+                >
                   {job.buttonText}
                 </button>
-                <button className="block md:hidden w-full bg-[#753E34] hover:bg-amber-800 text-white py-2 px-4 rounded-full text-xs transition-colors duration-200">
+                <button
+                  className="block md:hidden w-full bg-[#753E34] hover:bg-amber-800 text-white py-2 px-4 rounded-full text-xs transition-colors duration-200"
+                  onClick={() => {
+                    const userAgent =
+                      navigator.userAgent || navigator.vendor || window.opera;
+
+                    if (
+                      /iPad|iPhone|iPod/.test(userAgent) &&
+                      !window.MSStream
+                    ) {
+                      window.location.href =
+                        "https://apps.apple.com/in/app/adidhi-hospitality/id6743770521?uo=2";
+                    } else if (/android/i.test(userAgent)) {
+                      window.location.href =
+                        "https://play.google.com/store/apps/details?id=com.adidhi.hospitality";
+                    } else {
+                      alert("Please open this link on your mobile device.");
+                    }
+                  }}
+                >
                   Explore
                 </button>
               </div>

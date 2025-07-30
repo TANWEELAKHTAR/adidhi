@@ -7,23 +7,15 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-5 gap-12 lg:gap-16">
         <div className="col-span-3">
           <Link href={"/"}><img src=".\images\adidhi-logo-vertical-white.svg" alt="" /></Link>
-          <p className="text-gray-300 text-sm md:w-2/3 mt-4">
+          <p className="text-gray-300 text-sm w-6/7 xl:w-4/11 mt-4">
             Adidhi Hospitality Solutions Pvt Ltd Malabar Innovation
-            Entrepreneurship Zone, Building No:446, Mangattuparamba, Near Kannur
+            Entrepreneurship Zone, <br className="hidden lg:block" /> Building No:446, Mangattuparamba, Near Kannur
             University Centre, Kalliasseri, Kannur, Kerala - 670 567
           </p>
         </div>
         <div className="col-span-1">
           <h3 className="text-white font-normal mb-6">Company</h3>
           <ul className="space-y-3">
-            <li>
-              <Link
-                href={"/"}
-                className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-light"
-              >
-                Home
-              </Link>
-            </li>
             <li>
               <Link
                 href={"/terms-policy"}

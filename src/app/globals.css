@@ -1,13 +1,5 @@
 @import "tailwindcss";
 
-/* .jobseeker{ */
-    /* background-image: url("/images/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-    /* background-image: linear-gradient(to, #FE5431, #000000);
-} */
-
 @font-face {
   font-family: 'MyFont';
   src: url('/fonts/Quicksand-Regular.woff2') format('truetype');
@@ -17,4 +9,17 @@
 
 *{
   font-family: 'MyFont';
+}
+
+@keyframes carouselScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-carousel {
+  animation: carouselScroll 10s linear infinite;
 }

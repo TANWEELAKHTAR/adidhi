@@ -1,16 +1,14 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import React from "react";
 
 const InfiniteJobsCarousel = () => {
-  const carouselRef = useRef(null);
-  const timelineRef = useRef(null);
-
   const images = ["/images/carousel-image.png"];
 
-  // Duplicate the data for seamless infinite scroll
+  // Duplicate data for seamless loop
   const duplicatedData = [
+    ...images,
+    ...images,
     ...images,
     ...images,
     ...images,
@@ -19,27 +17,9 @@ const InfiniteJobsCarousel = () => {
     ...images,
   ];
 
-  useEffect(() => {
-    const carousel = carouselRef.current;
-    const cards = carousel.querySelectorAll(".job-card");
-    if (!cards.length) return;
-    const cardWidth = cards[0].offsetWidth + 24; // Including gap
-    const totalWidth = cardWidth * images.length;
-
-    // Set up infinite scroll animation
-    timelineRef.current = gsap.timeline({ repeat: -1 });
-
-    timelineRef.current.set(carousel, { x: 0 });
-    timelineRef.current.to(carousel, {
-      x: -totalWidth,
-      duration: 25,
-      ease: "none",
-    });
-  }, []);
-
   return (
     <div className="w-full mb-12 overflow-hidden">
-      <div ref={carouselRef} className="w-fit flex items-center gap-3">
+      <div className="carousel-track flex items-center gap-3 animate-carousel">
         {duplicatedData.map((imgSrc, index) => (
           <div
             key={`${imgSrc}-${index}`}
@@ -48,7 +28,7 @@ const InfiniteJobsCarousel = () => {
             <img
               src={imgSrc}
               alt={`Job ${index + 1}`}
-              className="h-48 md:h-80 object-fit"
+              className="h-48 md:h-80 object-contain"
             />
           </div>
         ))}

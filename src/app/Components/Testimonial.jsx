@@ -77,7 +77,7 @@ const Testimonial = () => {
     {
       name: "MRA",
       location: "Kochi",
-      text: "Adidhi has transformed our hiring process. We now find skilled hospitality staff quickly and efficiently, saving us valuable time.",
+      text: "Adidhi has transformed our hiring process. We now find skilled hospitality staff quickly and efficiently, saves our valuable time for us.",
       image: "/images/p2.png",
     },
   ];
@@ -152,7 +152,7 @@ const Testimonial = () => {
         </h3>
       </div>
       <p className="text-gray-600 leading-relaxed text-xs md:text-sm font-semibold">
-        {testimonial.text}
+        " {testimonial.text} "
       </p>
     </div>
   );
@@ -177,7 +177,7 @@ const Testimonial = () => {
         </div>
       </div>
       <p className="text-gray-600 leading-relaxed text-xs md:text-sm font-semibold">
-        {testimonial.text}
+        " {testimonial.text} "
       </p>
     </div>
   );
