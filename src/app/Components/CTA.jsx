@@ -19,7 +19,7 @@ export default function CTA() {
         />
         <img
           className="object-cover w-40 h-40 mt-4"
-          src="./images/qr.png"
+          src="./images/qr.svg"
           alt=""
         />
         <p className="mt-4 text-2xl md:text-5xl lg:text-4xl max-w-sm text-center md:text-start font-bold">
